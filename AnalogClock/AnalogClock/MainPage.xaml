@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnalogClock.MainPage">
+
+    <ScrollView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="300"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="300"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Image Source="clockimag.png"
+                   Grid.Column="1"
+                   Grid.Row="1"/>
+
+            <Line x:Name="minute"
+                X1="150"
+                  Y1="150"
+                  X2="150"
+                  Y2="30"
+                  StrokeLineCap="Round"
+                  Stroke="Black"
+                  StrokeThickness="5"
+                  Grid.Column="1"
+                  Grid.Row="1"/>
+
+            <Line x:Name="hour" X1="150"
+                  Y1="150"
+                  X2="150"
+                  Y2="80"
+                  StrokeLineCap="Round"
+                  Stroke="Green"
+                  StrokeThickness="8"
+                  Grid.Column="1"
+                  Grid.Row="1"/>
+
+            <Line x:Name="second" X1="150"
+                  Y1="150"
+                  X2="150"
+                  Y2="10"
+                  StrokeLineCap="Round"
+                  Stroke="Red"
+                  StrokeThickness="2"
+                  Grid.Column="1"
+                  Grid.Row="1"/>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>
